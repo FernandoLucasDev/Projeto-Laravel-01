@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+}
+
+.logo-header {
+    width: 6rem;
+}
+
+.form-search-home {
+    max-width: 90%;
+    margin: auto;
+}
+
+.title-form-search {
+    margin: auto;
+}
+
+.footer-text {
+    margin-top: 4rem;
+}
+
+.card {
+    margin: 0.5rem;
+}
+
+.text-card {
+    margin: 0;
+}
+
+#search-container {
+    width: 100%;
+    background-image: url('/img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+    display: grid;
+    place-items: center;
+}
+
+#events-container {
+    padding: 20px;
+}
+
+@media screen and (max-width:880px){
+    .form-search-home {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #events-container {
+        padding: 50px;
+    }
+    
+}
