@@ -18,6 +18,11 @@
                 <p class="event-city"><ion-icon name="location-outline">{{ $event->city }}</ion-icon></p>
                 <p class="events-participants"><ion-icon name="peopple-outline"></ion-icon>Participantes</p>
                 <p class="event-owner"><ion-icon name="star-outline"></ion-icon> Organizador</p>
+                   @if ($event->items != null)
+                        @foreach ($event->items as $item)
+                            <p> > {{ $item }}</p>
+                        @endforeach
+                   @endif
                 <a href="#" class="btn btn-dark" id="event-submit">Confirmar presença</a>
             </div>
             <div class="event-description">

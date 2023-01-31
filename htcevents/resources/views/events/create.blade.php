@@ -18,11 +18,21 @@
                 <option value="0">Público</option>
                 <option value="1">Privado</option>
             </select><br>
+            <label for="date">Data do evento</label><br>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="">Adicione itens de infraestrutura:</label><br>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" id="items" value="cadeiras"> Cadeiras <br>
+                <input type="checkbox" name="items[]" id="items" value="palco"> Palco <br>
+                <input type="checkbox" name="items[]" id="items" value="bebidagratis"> Bebida gratis <br>
+                <input type="checkbox" name="items[]" id="items" value="comida"> Open food <br>
+                <input type="checkbox" name="items[]" id="items" value="brindes"> Brindes <br>
+            </div><br>
             <label for="description">Descrição:</label>
             <textarea rows="08" name="description" id="description" class="form-control" placeholder="Descrição do evento"></textarea><br>
             <label for="image">Imagem da capa:</label>
             <input type="file" id="image" name="image" class="form-control-file"><br><br>
-            <input type="submit" class="btn btn-dark button-send-event" value="Criar">
+            <input type="submit" class="btn btn-dark button-send-event" value="Criar"><br><br>
         </div>
     </form>
 </div>
