@@ -19,13 +19,18 @@
     <div class="row div-events" id="cards-container">
         @foreach($events as $event)
         <div class="card" style="width: 18rem;">
-            <img src="/img/back.jpg" class="card-img-top" alt="{{ $event->title }}">
+            <img src="@if($event->image)
+                        /img/events/{{ $event->image }}
+                      @else
+                      /img/back.jpg
+                      @endif" 
+                      class="card-img-top" alt="{{ $event->title }}">
             <div class="card-body">
               <h5 class="card-title">{{ $event->title }}</h5>
               <p class="text-secondary card-text text-card">X participantes</p>
               <p class="text-card text-end text-success mb-2">{{ $event->city }}</p>
               <p class="card-text">{{ $event->description }}</p>
-              <a class="btn btn-dark w-100">Participar</a>
+              <a class="btn btn-dark w-100" href="/events/{{ $event->id }}">Participar</a>
             </div>
           </div>
         @endforeach

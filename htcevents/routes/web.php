@@ -9,3 +9,7 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/produtos', [EventController::class, 'products']);
 
 Route::get('/criar', [EventController::class, 'create']);
+
+Route::post('/events', [EventController::class, 'store']);
+
+Route::get('/events/{id}', [EventController::class, 'show']);

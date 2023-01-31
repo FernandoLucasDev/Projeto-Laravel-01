@@ -2,6 +2,16 @@ h1 {
     color: red;
 }
 
+.msg {
+    background-color: rgba(0, 128, 0, 0.479);
+    color: rgb(0, 48, 0);
+    width: 6rem;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid #00360070;
+    border-radius: 10px;
+}
+
 .logo-header {
     width: 6rem;
 }
@@ -41,6 +51,29 @@ h1 {
     padding: 20px;
 }
 
+#image-container, #info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.event-description-txt {
+    width: 55%;
+}
+
+
 @media screen and (max-width:880px){
     .form-search-home {
         max-width: 100%;
@@ -50,5 +83,8 @@ h1 {
     #events-container {
         padding: 50px;
     }
-    
+    .button-send-event {
+        width: 95%;
+        margin: 0.5rem;
+    }
 }
